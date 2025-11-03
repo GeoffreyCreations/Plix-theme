@@ -15,7 +15,7 @@
             --button3circle: #fff;
             --lightgray: #c1c1c1;
             --white: #ffffff;
-            --red: #b10000;
+            
         }
 
         @keyframes letitblur {
@@ -408,20 +408,23 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            background: var(--black3);
             color: var(--white);
             padding: 2.5rem;
             border-radius: 12px;
             text-align: center;
             align-items: center;
             justify-content: center;
-            border: 1px solid rgba(255, 255, 255, 0.02);
             max-width: 90%;
             width: 950px;
+            background: rgba(3, 3, 3, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(13px);
+            border: 2px solid rgba(15, 15, 15, 0.3);
         }
 
         #modalclose {
-
             border: none;
             background: transparent;
             height: 57px;
@@ -444,7 +447,9 @@
         }
 
         #modalclose:hover {
-            background-color: var(--red);
+            background: rgba(177, 0, 0, 0.8);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(13px);
         }
 
         .modaltittle {
